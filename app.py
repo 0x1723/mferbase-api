@@ -179,9 +179,9 @@ def list(column, background, mfer_type, eyes, mouth, headphones, smoke, watch, b
     if hoodies == "01":
     	hats_over_dict[hats_over] = 'hoodie'
     condition = ""
-    if shirt and shirt in ["13", "14"]:
+    if shirt in ["13", "14"]:
     	condition = f"and chain = '{shirt_dict[shirt]}'"
-    elif shirt and shirt not in ["13", "14"]:
+    elif shirt in ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]:
     	condition = f"and shirt = '{shirt_dict[shirt]}'"
     con = sqlite3.connect("mferbase.db")
     con.row_factory = sqlite3.Row
@@ -202,6 +202,7 @@ and `hat under headphones` {' = "'+hats_under_dict[hats_under]+'"' if hats_under
 and `short hair` {' = "'+short_hair_dict[short_hair]+'"' if short_hair_dict[short_hair] else "is null"}
 {condition}
 """
+    print(query)
     cur.execute(query)
    
     rows = cur.fetchall()
