@@ -13,175 +13,175 @@ class RegexConverter(BaseConverter):
 app.url_map.converters['regex'] = RegexConverter
 
 background_dict = {
-	"-1": None,
-	"01": "blue",
-	"02": "yellow",
-	"03": "green",
-	"04": "orange",
-	"05": "red",
-	"06": "space",
-	"07": "tree",
-	"08": "graveyard"
+	"01": None,
+	"02": "blue",
+	"03": "yellow",
+	"04": "green",
+	"05": "orange",
+	"06": "red",
+	"07": "space",
+	"08": "tree",
+	"09": "graveyard"
 }
 
 mfer_type_dict = {
-	"-1": None,
-	"01": "plain mfer",
-	"02": "charcoal mfer",
-	"03": "zombie mfer",
-	"04": "ape mfer",
-	"05": "alien mfer"
+	"01": None,
+	"02": "plain mfer",
+	"03": "charcoal mfer",
+	"04": "zombie mfer",
+	"05": "ape mfer",
+	"06": "alien mfer"
 }
 
 eyes_dict = {
-	"-1": None,
-	"01": "3d glasses",
-	"02": "alien eyes",
-	"03": "eye mask",
-	"04": "eye patch",
-	"05": "nerd glasses",
-	"06": "purple shades",
-	"07": "regular eyes",
-	"08": "shades",
-	"09": "vr",
-	"10": "zombie eyes"
+	"01": None,
+	"02": "3d glasses",
+	"03": "alien eyes",
+	"04": "eye mask",
+	"05": "eye patch",
+	"06": "nerd glasses",
+	"07": "purple shades",
+	"08": "regular eyes",
+	"09": "shades",
+	"10": "vr",
+	"11": "zombie eyes"
 }
 
 mouth_dict = {
-	"-1": None,
-	"01": "flat",
-	"02": "smile"
+	"01": None,
+	"02": "flat",
+	"03": "smile"
 }
 
 headphones_dict = {
-	"-1": None,
-	"01": "rcs",
-	"02": "black headphones",
-	"03": "blue headphones",
-	"04": "gold headphones",
-	"05": "green headphones",
-	"06": "lined headphones",
-	"07": "pink headphones",
-	"08": "red headphones",
-	"09": "white headphones"
+	"01": None,
+	"02": "rcs",
+	"03": "black headphones",
+	"04": "blue headphones",
+	"05": "gold headphones",
+	"06": "green headphones",
+	"07": "lined headphones",
+	"08": "pink headphones",
+	"09": "red headphones",
+	"10": "white headphones"
 }
 
 smoke_dict = {
-	"-1": None,
-	"01": "cig black",
-	"02": "cig white",
-	"03": "pipe"
+	"01": None,
+	"02": "cig black",
+	"03": "cig white",
+	"04": "pipe"
 }
 
 watch_dict = {
-	"-1": None,
-	"01": "argo black",
-	"02": "argo white",
-	"03": "oyster gold",
-	"04": "oyster silver",
-	"05": "sub bat",
-	"06": "sub black",
-	"07": "sub blue",
-	"08": "sub cola",
-	"09": "sub lantern",
-	"10": "sub red",
-	"11": "sub rose",
-	"12": "sub turquoise"
+	"01": None,
+	"02": "argo black",
+	"03": "argo white",
+	"04": "oyster gold",
+	"05": "oyster silver",
+	"06": "sub bat",
+	"07": "sub black",
+	"08": "sub blue",
+	"09": "sub cola",
+	"10": "sub lantern",
+	"11": "sub red",
+	"12": "sub rose",
+	"13": "sub turquoise"
 }
 
 beard_dict = {
-	"-1": None,
-	"01": "full beard",
-	"02": "shadow beard"
+	"01": None,
+	"02": "full beard",
+	"03": "shadow beard"
 }
 
 hoodies_dict = {
-	"-1": None,
-	"01": "hoodie"
+	"01": None,
+	"02": "hoodie"
 }
 
 shirt_dict = {
-	"-1": None,
-	"01": "collared shirt blue",
-	"02": "collared shirt green",
-	"03": "collared shirt pink",
-	"04": "collared shirt turquoise",
-	"05": "collared shirt white",
-	"06": "collared shirt yellow",
-	"07": "hoodie down blue",
-	"08": "hoodie down gray",
-	"09": "hoodie down green",
-	"10": "hoodie down pink",
-	"11": "hoodie down red",
-	"12": "hoodie down white",
-	"13": "gold chain",
-	"14": "silver chain"
+	"01": None,
+	"02": "collared shirt blue",
+	"03": "collared shirt green",
+	"04": "collared shirt pink",
+	"05": "collared shirt turquoise",
+	"06": "collared shirt white",
+	"07": "collared shirt yellow",
+	"08": "hoodie down blue",
+	"09": "hoodie down gray",
+	"10": "hoodie down green",
+	"11": "hoodie down pink",
+	"12": "hoodie down red",
+	"13": "hoodie down white",
+	"14": "gold chain",
+	"15": "silver chain"
 }
 
 long_hair_dict = {
-	"-1": None,
-	"01": "long hair black",
-	"02": "long hair yellow"
+	"01": None,
+	"02": "long hair black",
+	"03": "long hair yellow"
 }
 
 hats_under_dict = {
-	"-1": None,
-	"01": "bandana blue",
-    "02": "bandana dark gray",
-    "03": "bandana red",
-    "04": "beanie monochrome",
-    "05": "beanie",
-    "06": "cap monochrome",
-    "07": "cap purple",
-    "08": "headband blue/green",
-    "09": "headband blue/red",
-    "10": "headband blue/white",
-	"11": "headband green/white",
-	"12": "headband pink/white",
-	"13": "knit atlanta",
-	"14": "knit baltimore",
-	"15": "knit buffalo",
-	"16": "knit chicago",
-	"17": "knit cleveland",
-	"18": "knit dallas",
-	"19": "knit kc",
-	"20": "knit las vegas",
-	"21": "knit miami",
-	"22": "knit new york",
-	"23": "knit pittsburgh",
-	"24": "knit san fran"
+	"01": None,
+	"02": "bandana blue",
+    "03": "bandana dark gray",
+    "04": "bandana red",
+    "05": "beanie monochrome",
+    "06": "beanie",
+    "07": "cap monochrome",
+    "08": "cap purple",
+    "09": "headband blue/green",
+    "10": "headband blue/red",
+    "11": "headband blue/white",
+	"12": "headband green/white",
+	"13": "headband pink/white",
+	"14": "knit atlanta",
+	"15": "knit baltimore",
+	"16": "knit buffalo",
+	"17": "knit chicago",
+	"18": "knit cleveland",
+	"19": "knit dallas",
+	"20": "knit kc",
+	"21": "knit las vegas",
+	"22": "knit miami",
+	"23": "knit new york",
+	"24": "knit pittsburgh",
+	"25": "knit san fran"
 }
 
 hats_over_dict = {
-	"-1": None,
-	"01": "cowboy hat",
-	"02": "pilot helmet",
-	"03": "tophat"
+	"01": None,
+	"02": "cowboy hat",
+	"03": "pilot helmet",
+	"04": "tophat"
 }
 
 short_hair_dict = {
-	"-1": None,
-	"01" : "messy black",
-	"02" : "messy purple",
-	"03" : "messy red",
-	"04" : "messy yellow",
-	"05" : "mohawk black",
-	"06" : "mohawk blue",
-	"07" : "mohawk green",
-	"08" : "mohawk pink",
-	"09" : "mohawk purple",
-	"10" : "mohawk red",
-	"11" : "mohawk yellow"
+	"01": None,
+	"02" : "messy black",
+	"03" : "messy purple",
+	"04" : "messy red",
+	"05" : "messy yellow",
+	"06" : "mohawk black",
+	"07" : "mohawk blue",
+	"08" : "mohawk green",
+	"09" : "mohawk pink",
+	"10" : "mohawk purple",
+	"11" : "mohawk red",
+	"12" : "mohawk yellow"
 }
 
 @app.route('/<column>/<regex("([0-9]|-)[0-9]"):background><regex("([0-9]|-)[0-9]"):mfer_type><regex("([0-9]|-)[0-9]"):eyes><regex("([0-9]|-)[0-9]"):mouth><regex("([0-9]|-)[0-9]"):headphones><regex("([0-9]|-)[0-9]"):smoke><regex("([0-9]|-)[0-9]"):watch><regex("([0-9]|-)[0-9]"):beard><regex("([0-9]|-)[0-9]"):hoodies><regex("([0-9]|-)[0-9]"):shirt><regex("([0-9]|-)[0-9]"):long_hair><regex("([0-9]|-)[0-9]"):hats_under><regex("([0-9]|-)[0-9]"):hats_over><regex("([0-9]|-)[0-9]"):short_hair>', methods = ['GET'])
 def list(column, background, mfer_type, eyes, mouth, headphones, smoke, watch, beard, hoodies, shirt, long_hair, hats_under, hats_over, short_hair):
-    if hoodies == "01":
+    if hoodies == "02":
     	hats_over_dict[hats_over] = 'hoodie'
     condition = ""
-    if shirt in ["13", "14"]:
+    if shirt in ["14", "15"]:
     	condition = f"and chain = '{shirt_dict[shirt]}'"
-    elif shirt in ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]:
+    elif shirt in ["02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13"]:
     	condition = f"and shirt = '{shirt_dict[shirt]}'"
     con = sqlite3.connect("mferbase.db")
     con.row_factory = sqlite3.Row
