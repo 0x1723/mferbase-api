@@ -2,8 +2,10 @@ import sqlite3
 from flask import Flask, jsonify, request
 from flask_api import status
 from werkzeug.routing import BaseConverter
+from flask_cors import CORS
   
 app = Flask(__name__)
+cors = CORS(app, resources={r"/id/*": {"origins": "*"}})
 
 class RegexConverter(BaseConverter):
     def __init__(self, url_map, *items):
